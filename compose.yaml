@@ -1,0 +1,23 @@
+services: 
+  mariadb:
+    build: .
+    container_name: mdb
+    env_file: 
+      - .env
+    volumes:
+      - /root/.my.cnf:/root/.my.cnf:ro
+    ports:
+      - "3306:3306"
+    networks:
+      dbnet:
+        ipv4_address: 10.0.13.47
+    restart: unless-stopped
+
+networks:
+  dbnet:
+    name: dbnet
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.0.13.0/24
+          gateway: 10.0.13.1
