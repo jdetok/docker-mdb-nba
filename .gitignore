@@ -1,3 +1,4 @@
 .env
 db/*dump.sql
-dump
+bkp/*/*.sql
+bkp/*/*.log
