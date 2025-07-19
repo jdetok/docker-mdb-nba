@@ -16,3 +16,4 @@ the database is populated by a nightly python script that sources nba/wnba data,
     - all procedures are called in a single script, which is run nightly via a cronjob running /scripts/run_nightly_procs.sh
 - ## backups
     - backups -- via mariadb-dump -- are run daily. database `nba` is backed up to retain the data, database `mysql` is done to maintain users
+    - /scripts/run_nightly_procs.sh runs the stored procedures to update the api tables
