@@ -1,1 +1,1 @@
-cp /mnt/web/dba/proc/* sql/proc/
+cp /mnt/web/dba/proc/* scripts/sql/proc/
