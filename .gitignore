@@ -3,3 +3,4 @@ db/0-initdb.sql
 db/*dump.sql
 bkp/*/*.sql
 bkp/*/*.log
+sql/admin/users.sql
