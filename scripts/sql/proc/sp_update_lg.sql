@@ -10,8 +10,12 @@ TODO: stored procedure to reassign leagues for teams
  
 */
 
+-- create or replace procedure sp_update_lg()
+
 select a.team_id, b.team, b.team_name, b.lg
 from p_box a
 inner join team b on b.team_id = a.team_id
 where left(a.season_id, 1) = 2
 group by team_id;
+
+select * from league;
