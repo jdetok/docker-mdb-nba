@@ -68,4 +68,4 @@ set session foreign_key_checks=1;
 end$$
 delimiter ;
 
-call sp_update_pl_active_status();
+-- call sp_update_pl_active_status();
